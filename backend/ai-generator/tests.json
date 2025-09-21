@@ -1,0 +1,33 @@
+{
+  "tests": [
+    {
+      "name": "Test AI generation endpoint",
+      "method": "POST",
+      "path": "/",
+      "body": {
+        "user_id": 1,
+        "type": "text",
+        "prompt": "Создай статью о пользе ИИ",
+        "title": "Тест генерации текста",
+        "description": "Тестовая генерация"
+      },
+      "expectedStatus": 200,
+      "expectedBody": {
+        "success": "boolean",
+        "project_id": "number",
+        "result": "string",
+        "type": "string",
+        "title": "string"
+      },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Test OPTIONS CORS",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200,
+      "expectedBody": "",
+      "bodyMatcher": "exact"
+    }
+  ]
+}

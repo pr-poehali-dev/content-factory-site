@@ -63,7 +63,7 @@ const Tools = () => {
     
     setLoading(true);
     try {
-      const response = await fetch('https://functions.poehali.dev/75061b9c-6b31-4d5c-81be-0f2032cf8332', {
+      const response = await fetch('https://functions.poehali.dev/d8a7f94a-1131-4a9f-992d-62de74ee4ecf', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
